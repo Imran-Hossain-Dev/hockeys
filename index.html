@@ -9,6 +9,10 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
+
+<!-- font awsam cdn -->
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
    
     <!-- tailwindcss and daisyui cdn -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
@@ -54,6 +58,16 @@
     .ip-b{
       border-radius: 12px;
       background: rgba(19, 19, 24, 0.03);
+    }
+
+    .p-text-colloer{
+      color: rgba(255, 255, 255, 0.80);
+    }
+
+    .mx-width{
+      max-width: 100%;
+      background-color: #131318;
+      wid
     }
 </style>
 
@@ -625,6 +639,19 @@
                    <input class="p-4 w-[90%] h-[10rem] lg:h-[25.50rem]  ip-b py-6 mt-4" type="text" name="" id="" placeholder="Write your message">
     
                 </div>
+
+                <div class="lg:col-span-12 p-5    bg-slate-1000  ">
+                  <h4 class="text-[#131318] font-bold text-[1.5rem]">Social Media</h4>
+
+                  <div class="flex flex-row gap-2">
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-brands fa-facebook-f"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-github"></i>
+
+                  </div>
+    
+                </div>
     
                 </div>
                 
@@ -643,18 +670,52 @@
 
     <!-- footer section start -->
 
-    <div class="container">
-      <div>
-        <h4>Get In Touch</h4>
-        <p>Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
-        <div class="text-[rgba(255, 255, 255, 0.80)]">
-          <p>hockeys@support.com</p>
+    
+      <footer class=" ">
+
+        <div class=" w-fullcontainer  mx-auto  bg-[#131318] ">
+          <footer class="footer p-10 text-base-content ">
+            <div class=" flex gap-4 flex-col">
+              <h4 class=" p-text-colloer font-bold text-[1.5rem]">Get In Touch</h4>
+              <p class="p-text-colloer">Dit amet consectetur placerat dolor. <br> Purus urna in sit nullam proin. </p>
+              <div class="flex gap-2">
+                <img src="./Images/email-footer.png" alt="">
+                <p class="p-text-colloer">hockeys@support.com</p>
+              </div>
+              <div class="flex gap-2">
+                <img src="./Images/call-footer.png" alt="">
+                <p class="p-text-colloer">(+62) 123-321-543</p>
+              </div>
+            </div>
+            <div class="  flex lg:flex-row lg:gap-20 items-center justify-center">
+              <nav class="flex flex-col items-center justify-center">
+                <header class=" footer-title p-text-colloer"">Company</header> 
+                <a class="link link-hover p-text-colloer">About us</a>
+                <a class="link link-hover p-text-colloer">Leadership</a>
+                <a class="link link-hover p-text-colloer">Careers</a>
+                <a class="link link-hover p-text-colloer">News & Article</a>
+                <a class="link link-hover p-text-colloer">Legal Notice</a>
+              </nav> 
+              <nav class="flex flex-col items-center justify-center">
+                <header class="footer-title p-text-colloer">Support</header> 
+                <a class="link p-text-colloer link-hover text-[rgba(255, 255, 255, 0.80)]">Help Center</a>
+                <a class="link p-text-colloer link-hover">FAQ</a>
+                <a class="link p-text-colloer link-hover">Ticket Support</a>
+                <a class="link p-text-colloer link-hover">Contact Us</a>
+              </nav>
+            </div> 
+            <nav class="">
+              <header class="footer-title p-text-colloer">Services</header> 
+              <a class="link link-hover p-text-colloer">Academy</a>
+              <a class="link link-hover p-text-colloer">Group Lesson</a>
+              <a class="link link-hover p-text-colloer">Hockeys for kids</a>
+              <a class="link link-hover p-text-colloer">Private Lesson</a>
+              <a class="link link-hover p-text-colloer">Hockeys for Adult</a>
+            </nav>
+          </footer>
         </div>
-        <div>
-          <p>(+62) 123-321-543</p>
-        </div>
-      </div>
-    </div>
+      </footer>
+    
     <!-- footer section End -->
 
     
