@@ -15,7 +15,19 @@
 <script src="https://cdn.tailwindcss.com"></script>
 
 
-
+<script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
+            'my-text': '#131318',
+            'p-text': 'rgba(19, 19, 24, 0.60)'
+          }
+        }
+      }
+    }
+  </script>
 
 <style>
     body{
@@ -32,7 +44,7 @@
 
     <!-- carousel section  start -->
     <div class="container mx-auto">
-        <div class="carousel w-full">
+        <div class="carousel lg:w-full">
             <div id="slide1" class="carousel-item relative w-full">
               <img src="./Images/1.png" class="w-full" />
               <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
@@ -56,15 +68,44 @@
 
     <!-- Hockeys Club section  start -->
     
-    <div class="copntainer my-4">
+    <div class="container mx-auto my-4">
         <div>
             <hr>
-            <div class="my-8 space-y-6">
+            <div class=" flex flex-col lg:w-[50%] mx-auto text-center py-4 space-y-2  ">
                 <h3 class="text-4xl font-extrabold flex justify-center">Professional Hockeys Club</h3>
-                <p class="text-base font-medium flex justify-center text-center text-[rgba(19, 19, 24, 0.60)]">Passionate community uniting hockey enthusiasts for thrilling games, events, and camaraderie on and off the ice</p>
+                <p class="text-base font-medium flex justify-center text-center text-p-text">Passionate community uniting hockey enthusiasts for thrilling games, events, and camaraderie on and off the ice</p>
             </div>
             <hr>
+            
+            <div class="my-4 grid lg:grid-cols-4 gap-6">
+                <div class="flex flex-col justify-center items-center gap-1">
+                    <div class="radial-progress text-[#FF4240] " style="--value:87;"            role="progressbar"> <span class="text-my-text font-extrabold">87%</span>
+                    </div>
+                    <h4 class="text-my-text text-xl font-bold">Prayer Facility</h4>
+                    <p class="text-center text-p-text font-medium">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-1">
+                    <div class="radial-progress text-[#49D293] " style="--value:87;"            role="progressbar"> <span class="text-my-text font-extrabold">95%</span>
+                    </div>
+                    <h4 class="Experienced Coach">Prayer Facility</h4>
+                    <p class="text-center text-p-text font-medium">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-1">
+                    <div class="radial-progress text-[#FFB546] " style="--value:87;"            role="progressbar"> <span class="text-my-text font-extrabold">90%</span>
+                    </div>
+                    <h4 class="text-my-text text-xl font-bold">Senior Player</h4>
+                    <p class="text-center text-p-text font-medium">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                </div>
+                <div class="flex flex-col justify-center items-center gap-1">
+                    <div class="radial-progress text-[#4C8DF1] " style="--value:87;"            role="progressbar"> <span class="text-my-text font-extrabold">80%</span>
+                    </div>
+                    <h4 class="text-my-text text-xl font-bold">Training Ground</h4>
+                    <p class="text-center text-p-text font-medium">Amet consectetur. Condimentum <br> dignissim adipiscing .</p>
+                </div>
             </div>
+
+            
+      
         </div>
 
     <!-- Hockeys Club section end -->
