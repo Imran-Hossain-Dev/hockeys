@@ -45,7 +45,19 @@
         border-radius: 16px;
         border: 1px solid rgba(19, 19, 24, 0.10);
     }
+    .toce-border{
+        border-radius: 16px;
+        background: #F8FDF0;
+        
+    }
+
+    .ip-b{
+      border-radius: 12px;
+      background: rgba(19, 19, 24, 0.03);
+    }
 </style>
+
+
 </head>
 <body>
 
@@ -558,20 +570,92 @@
 
     <!-- Get Touch Section-->
 
-    <div class="container">
+    <div class="container mx-auto">
         <hr>
         <div class=" flex flex-col lg:w-[50%] mx-auto text-center py-4 space-y-2  ">
             <h3 class="text-4xl font-extrabold flex justify-center">Get In Touch</h3>
-            <p class="text-base font-medium flex justify-center text-center text-p-text">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+            <p class="text-base lg:w[50%] font-medium flex justify-center text-center text-p-text">Dit amet consectetur. Condimentum dignissim adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
         </div>
         <hr>
 
-        <div>
-            <div></div>
-            <div></div>
+
+        <div class="flex flex-col lg:flex-row my-12 items-top">
+            <div class=" grid gap-8 lg:w-[30%] mx-auto  ">
+                <div class="bg-[#F8FDF0] space-y-4 p-4 toce-border py-8 w-full">
+                    <img src="./Images/call.png" alt="">
+                    <p class="text-p-text font-medium">Phone Number : </p>
+                    <p class="text-[#131318] font-bold text-[1rem]">(+62) 123-321-543</p>
+                </div>
+                <div class="bg-[#F8FDF0] space-y-4 p-4 toce-border py-8">
+                    <img src="./Images/email.png" alt="">
+                    <p class="text-p-text font-medium">Phone Number : </p>
+                    <p class="text-[#131318] font-bold text-[1rem]">(+62) 123-321-543</p>
+                </div>
+                <div class="bg-[#EFF5FE] space-y-4 p-4 toce-border py-8">
+                    <img src="./Images/map.png" alt="">
+                    <p class="text-p-text font-medium">Phone Number : </p>
+                    <p class="text-[#131318] font-bold text-[1rem]">(+62) 123-321-543</p>
+                </div>
+            </div>
+
+            <div class="lg:w-[70%]  ">
+              <div class="grid grid-cols-1 lg:grid-cols-12  ">
+                <div class="  lg:col-span-6 p-5    ">
+                  <label for=""> <span class="text-[#131318] text-[1.5rem] font-bold">Your Name</span></label> <br>
+                   <input class="p-4 w-[90%] ip-b py-6 mt-4" type="text" name="" id="" placeholder="Enter your full name">
+    
+                </div>
+                <div class="lg:col-span-6 p-5  bg-slate-1000  ">
+                  <label for=""> <span class="text-[#131318] text-[1.5rem] font-bold">Your Email</span></label> <br>
+                   <input class="p-4 w-[90%] ip-b py-6 mt-4" type="email" name="" id="" placeholder="Enter your email">
+    
+                </div>
+                <div class="lg:col-span-6 p-5  bg-slate-1000  ">
+                  <label for=""> <span class="text-[#131318] text-[1.5rem] font-bold">Subject</span></label> <br>
+                   <input class="p-4 w-[90%] ip-b py-6 mt-4" type="text" name="" id="" placeholder="Enter your subject">
+    
+                </div>
+                <div class="lg:col-span-6 p-5  bg-slate-1000  ">
+                  <label for=""> <span class="text-[#131318] text-[1.5rem] font-bold">Phone Number</span></label> <br>
+                   <input class="p-4 w-[90%] ip-b py-6 mt-4" type="text" name="" id="" placeholder="Enter your phone number">
+    
+                </div>
+                <div class="lg:col-span-12 p-5    bg-slate-1000  ">
+                  <label for=""> <span class="text-[#131318] text-[1.5rem] font-bold">Message</span></label> <br>
+                   <input class="p-4 w-[90%] h-[10rem] lg:h-[25.50rem]  ip-b py-6 mt-4" type="text" name="" id="" placeholder="Write your message">
+    
+                </div>
+    
+                </div>
+                
+            </div>
+
+            </div>
+            
         </div>
+
+        
+        
     </div>
 
+    <!-- end toce sections -->
+
+
+    <!-- footer section start -->
+
+    <div class="container">
+      <div>
+        <h4>Get In Touch</h4>
+        <p>Dit amet consectetur. Condimentum  adipiscing aliquam turpis placerat dolor. Purus urna in sit nullam proin. </p>
+        <div class="text-[rgba(255, 255, 255, 0.80)]">
+          <p>hockeys@support.com</p>
+        </div>
+        <div>
+          <p>(+62) 123-321-543</p>
+        </div>
+      </div>
+    </div>
+    <!-- footer section End -->
 
     
     
